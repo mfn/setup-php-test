@@ -9,6 +9,5 @@ jobs:
       - uses: shivammathur/setup-php@verbose
         with:
           coverage: none
-          ini-file: development
           php-version: '7.4'
       - run: php -i
