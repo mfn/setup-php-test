@@ -1,0 +1,12 @@
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: shivammathur/setup-php@verbose
+        with:
+          php-version: '7.4'
+      - run: php -i
